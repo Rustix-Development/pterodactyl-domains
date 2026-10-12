@@ -1,0 +1,11 @@
+{
+    "description": "Give servers their own addresses: subdomains on your zones or the customer's own domain, DNS records kept in sync, and free Let's Encrypt certificates written into the server's files.",
+    "autoload": {
+        "psr-4": {
+            "RustixDev\\Domains\\": "src/"
+        }
+    },
+    "config": {
+        "autoloader-suffix": "DomainsExtension"
+    }
+}

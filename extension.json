@@ -1,0 +1,44 @@
+{
+    "$schema": "./node_modules/@pterodactyl/sdk/manifest.schema.json",
+    "id": "domains",
+    "name": "Domains & SSL",
+    "version": "1.0.0",
+    "description": "Give servers their own addresses: subdomains on your zones or the customer's own domain, DNS records kept in sync, and free Let's Encrypt certificates written into the server's files.",
+    "author": "RustixDev",
+    "icon": "globe",
+    "requires": {
+        "panel": "^2.0.0-dev",
+        "sdk": ">=2.0.0-beta.4 <3.0",
+        "php": "^8.3"
+    },
+    "provider": "RustixDev\\Domains\\DomainsProvider",
+    "ui": {
+        "entry": "dist/client.js",
+        "mode": "native",
+        "prefix": "rxdm",
+        "screens": [
+            {
+                "id": "domains",
+                "area": "server",
+                "path": "domains",
+                "permission": [
+                    "ext.domains.read",
+                    "ext.domains.manage"
+                ],
+                "nav": {
+                    "label": "Domains",
+                    "icon": "globe"
+                }
+            },
+            {
+                "id": "overview",
+                "area": "admin",
+                "path": "domains",
+                "nav": {
+                    "label": "Domains",
+                    "icon": "globe"
+                }
+            }
+        ]
+    }
+}
