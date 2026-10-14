@@ -71,7 +71,7 @@ and limit **Zone Resources** to the zones you use for subdomains and delegation.
 
 ## Requirements
 
-- Pterodactyl Panel 2.0 (2.0-develop or later)
+- Pterodactyl Panel v2.0.0-beta.1 or later
 - PHP 8.3+ with the OpenSSL extension (part of every panel install) and, for international domain names, the intl extension.
 - The panel's scheduler running every minute (the `schedule:run` cron entry from the panel install guide). It runs `domains:work` every minute and `domains:renew` every hour.
 - Outgoing HTTPS from the panel to `api.cloudflare.com` and the ACME server.
