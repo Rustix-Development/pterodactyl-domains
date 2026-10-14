@@ -8,6 +8,6 @@ Download `domains-${VERSION}.pteroext` below, then upload it under **Admin → E
 php artisan p:extension:install /path/to/domains-${VERSION}.pteroext --enable
 ```
 
-Then add your Cloudflare API token (Zone:Read and DNS:Edit) and zones under the extension's settings. Requires Pterodactyl Panel 2.0 (2.0-develop or later), PHP 8.3+ and the panel's scheduler. See the README for features and settings.
+Then add your Cloudflare API token (Zone:Read and DNS:Edit) and zones under the extension's settings. Requires Pterodactyl Panel v2.0.0-beta.1 or later, PHP 8.3+ and the panel's scheduler. See the README for features and settings.
 
 This is a community extension and is not affiliated with or endorsed by Pterodactyl.
